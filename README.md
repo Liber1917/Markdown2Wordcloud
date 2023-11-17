@@ -1,1 +1,2 @@
 # Markdown2Wordcloud
+用于转换markdown中文文件到txt并进行词频统计、词云生成
