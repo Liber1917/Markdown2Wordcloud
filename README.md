@@ -1,6 +1,7 @@
 # Markdown2Wordcloud
 用于转换markdown中文文件到txt并进行词频统计、词云生成
 ## 下载与环境
+- windows
 - 直接```download zip```下载
 - ```python3.11```
 - ```anaconda```
