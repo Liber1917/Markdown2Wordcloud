@@ -4,7 +4,6 @@ import jieba
 import jieba.analyse
 import operator
 from collections import Counter
-from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 
 input_path = 'output.txt'
@@ -65,6 +64,7 @@ for k,v in sorted_data:
     f.write("%s,%d\n" % (k,v))
 f.close()
 
+from wordcloud import WordCloud
 # 生成词云图像
 font_path = 'Genshin_default_fonts.ttf'  # 字体文件路径
 wordcloud = WordCloud(width=800, height=400, background_color='white', font_path=font_path).generate(content)
