@@ -12,11 +12,11 @@ if %errorlevel% equ 0 (
     REM 当前 Python 版本不是 3.11，创建虚拟环境
     echo Current Python version is not %PYTHON_VERSION%, creating virtual environment
 
-    REM 创建 conda 虚拟环境
-    conda create -n myenv python=%PYTHON_VERSION%
+    REM 创建虚拟环境
+    python -m venv myenv
 
     REM 激活虚拟环境
-    call activate myenv
+    call myenv\Scripts\activate
 )
 
 REM 安装依赖项
